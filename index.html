@@ -1,0 +1,305 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOIRWAY. — OWN THE WAY.</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 520px;
+            margin: auto;
+            padding: 35px 20px 30px;
+        }
+
+        /* LOGO */
+        .brand {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .brand h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+
+        .tagline {
+            margin-top: 10px;
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #bdbdbd;
+        }
+
+        /* PRODUCT IMAGE */
+        .product {
+            margin-top: 30px;
+            margin-bottom: 28px;
+        }
+
+        .product img {
+            width: 100%;
+            display: block;
+            border-radius: 2px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            margin-top: 14px;
+            text-align: center;
+        }
+
+        .product-info h2 {
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .product-info p {
+            margin-top: 7px;
+            color: #999;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* BUTTONS */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            min-height: 54px;
+
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            text-decoration: none;
+
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+
+            transition: all 0.25s ease;
+        }
+
+        .link:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .link.primary {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .link.primary:hover {
+            background: #d9d9d9;
+        }
+
+        /* DIVIDER */
+        .divider {
+            height: 1px;
+            background: #242424;
+            margin: 38px 0 25px;
+        }
+
+        /* BRAND STATEMENT */
+        .statement {
+            text-align: center;
+        }
+
+        .statement h3 {
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-weight: 500;
+            color: #777;
+        }
+
+        .statement p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 1px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        footer p {
+            font-size: 9px;
+            color: #555;
+            letter-spacing: 2px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 400px) {
+
+            .container {
+                padding: 28px 16px;
+            }
+
+            .brand h1 {
+                font-size: 27px;
+            }
+
+            .link {
+                min-height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- BRAND -->
+        <header class="brand">
+
+            <h1>NOIRWAY.</h1>
+
+            <div class="tagline">
+                OWN THE WAY.
+            </div>
+
+            <div class="tagline">
+                WALK YOUR OWN NOIR.
+            </div>
+
+        </header>
+
+
+        <!-- PRODUCT -->
+        <section class="product">
+
+            <!--
+                Upload foto produk ke repository
+                dengan nama: doberman.jpg
+            -->
+
+            <img src="doberman.jpg"
+                 alt="NOIRWAY Doberman Series">
+
+            <div class="product-info">
+
+                <h2>DOBERMAN SERIES</h2>
+
+                <p>NOIRWAY BOXY TEE — DROP 01</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- LINKS -->
+        <section class="links">
+
+            <!-- MARKETPLACE -->
+            <a
+                class="link primary"
+                href="MASUKKAN-LINK-MARKETPLACE-DISINI"
+                target="_blank"
+            >
+                SHOP DROP 01
+            </a>
+
+
+            <!-- PRODUCT -->
+            <a
+                class="link"
+                href="MASUKKAN-LINK-PRODUK-DOBERMAN-DISINI"
+                target="_blank"
+            >
+                DOBERMAN SERIES
+            </a>
+
+
+            <!-- INSTAGRAM -->
+            <a
+                class="link"
+                href="MASUKKAN-LINK-INSTAGRAM-DISINI"
+                target="_blank"
+            >
+                INSTAGRAM
+            </a>
+
+
+            <!-- TIKTOK -->
+            <a
+                class="link"
+                href="MASUKKAN-LINK-TIKTOK-DISINI"
+                target="_blank"
+            >
+                TIKTOK
+            </a>
+
+
+            <!-- WHATSAPP -->
+            <a
+                class="link"
+                href="MASUKKAN-LINK-WHATSAPP-DISINI"
+                target="_blank"
+            >
+                CONTACT
+            </a>
+
+        </section>
+
+
+        <!-- DIVIDER -->
+        <div class="divider"></div>
+
+
+        <!-- BRAND STATEMENT -->
+        <section class="statement">
+
+            <h3>NOIRWAY COLLECTION — PHASE I</h3>
+
+            <p>
+                Own your way.<br>
+                Walk your own noir.
+            </p>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                © 2026 NOIRWAY. ALL RIGHTS RESERVED.
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
+```
